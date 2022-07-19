@@ -35,5 +35,5 @@ pip install flask
 python app.py
 ```
 
-* The request is what the user sends when visiting the URL http://127.0.0.1:5006/. The response is what the server sends back to the user after the request was received. The text we see in the browser is just part of a response.Both requests and responses have a standardized structure defined in the HTTP.
+* The `request` is what the user sends when visiting the URL http://127.0.0.1:5006/. The `response` is what the server sends back to the user after the request was received. The text we see in the browser is just part of a response.Both requests and responses have a standardized structure defined in the HTTP.
 
