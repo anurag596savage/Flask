@@ -37,3 +37,34 @@ python app.py
 
 * The `request` is what the user sends when visiting the URL http://127.0.0.1:5006/. The `response` is what the server sends back to the user after the request was received. The text we see in the browser is just part of a response.Both requests and responses have a standardized structure defined in the HTTP.
 
+
+---
+
+* What is a __web server__ ? <br>
+-> It is a piece of software designed to accept incoming web requests.
+
+* What do we send to a server when we enter the URL for a web page ? <br>
+->  Let us take an example, https://www.twitter.com/login. 
+In our case what the server sees is something like this :
+```
+GET/login/HTTP/1.1
+(HTTP Verb->Path->Protocol along with version)
+```
+
+* When does the server produce error ?
+    * If the path is not found
+    * If the HTTP is not supported or some other protocol is supported like SMTP/FTP for email/file transfer purpose applications.
+    * If the server is unavailable
+    * It may give back some HTML Code/text or nothing if not configured.
+
+* `The requests are almost identical what users send. The difference lies on only what the server responds with.`
+
+__HTTP Verbs__
+
+Verb | Meaning |
+| :--- | ---:
+GET     | Retrive something |
+POST    | Receive data(creation) |
+PUT     | Make sure something is there(updation)
+DELETE  | Remove something
+
