@@ -59,6 +59,10 @@ GET/login/HTTP/1.1
 
 * `The requests are almost identical what users send. The difference lies on only what the server responds with.`
 
+---
+
+
+
 __HTTP Verbs__
 
 Verb | Meaning |
