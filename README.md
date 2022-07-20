@@ -29,8 +29,8 @@ __Some of the doubts that I encountered in the above code__
 
 * Since we may have more than version of python installed in our system. To solve the problem we need to create a `virtual environment` and activate it and once it is activated, install flask and run the app :
 ```
-python -m venv venv
-.\venv\Scripts\activate
+python -m venv env
+.\env\Scripts\activate
 pip install flask
 python app.py
 ```
