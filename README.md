@@ -77,7 +77,7 @@ DELETE  | Remove something
 
 <br>
 
-* Some important clarifications on HTTP Verbs
+* __Some important clarifications on HTTP Verbs__
 
     * When you issue a HTTP request to authenticate a login which verb do you use ?
 
