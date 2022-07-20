@@ -57,7 +57,8 @@ GET/login/HTTP/1.1
     * If the server is unavailable
     * It may give back some HTML Code/text or nothing if not configured.
 
-* `The requests are almost identical what users send. The difference lies on only what the server responds with.`
+
+* The `requests` are almost `identical` what users send. The difference lies on only `what the server responds with`.
 
 ---
 
@@ -71,4 +72,23 @@ GET     | Retrive something |
 POST    | Receive data(creation) |
 PUT     | Make sure something is there(updation)
 DELETE  | Remove something
+
+---
+
+<br>
+
+* Some important clarifications on HTTP Verbs
+
+    * When you issue a HTTP request to authenticate a login which verb do you use ?
+
+        * We use the POST verb because we are sending form data to the server (username and password)
+        
+    * What is the difference between  POST and PUT requests ?
+        * POST and PUT are just pieces of data in a request.The only difference is what the receiving server decides to do with them once they reach it.
+        * Normally applications will use POST to send data, and PUT to make sure some data is saved in the server.
+        * For example, POST can be used to authenticate a user, and PUT to create a new item in a store.
+
+
+
+
 
