@@ -26,7 +26,7 @@ def home():
 def create_store():
     request_data = request.get_json()
     new_store = {
-    'name':request['name'],
+    'name':request_data['name'],
     'items':[]
     }
     stores.append(new_store)
@@ -64,7 +64,7 @@ def create_item_in_store(name):
 
 
 # GET - /store/<string:name>/item
-@app.route('/store/<string:name>/item',methods=['POST'])
+@app.route('/store/<string:name>/item')
 def get_items_in_store(name):
     for store in stores:
         if(store['name']==name):
